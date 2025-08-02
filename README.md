@@ -39,7 +39,7 @@ Add a screenshot or gif here to show a quick glance of your website UI.
 
 ## 📌 Live Demo
 
-[👉 Click here to view the live site](https://yourusername.github.io/your-portfolio-repo/)
+[👉 Click here to view the live site]()
 
 ## 📬 Contact
 
