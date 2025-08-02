@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="/Favicon/Pf.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/side.css">
+    <link rel="stylesheet" href="/css/ideal.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/Contact.css"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    
+    <header>
+        <nav>
+            <div class="left">
+                <h1>Sameer's Portfolio</h1>
+              </div>
+            <div class="right">
+              <ul>
+                <li><a href="/Home.html">HOME</a></li>
+                <li><a href="/About.html">ABOUT</a></li>
+                <li><a href="/Projects.html">PROJECT</a></li>
+                <li><a href="/Contact.html">Contact Me</a></li>
+              </ul>
+              <span class="menu-toggle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </span>
+            </div>
+          </nav>
+    </header>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('nav ul').classList.toggle('active');
+        });
+    </script>
+    <section class="hero">
+        <h1>About Me..</h1>
+    </section>
+    <section class="curved">
+        <div class="about-container">
+            <div class="about-box">
+                <h2>Who I Am</h2>
+                <p>I am a passionate Full Stack Developer and Data Analyst, skilled in building scalable web 
+                    applications and data-driven insights. With expertise in the MERN stack (MongoDB, Express.js, React.js, Node.js) 
+                    and data analysis tools (Python, SQL, Power BI, Excel), I bridge the gap between software development and data-driven 
+                    decision-making.</p>
+            </div>
+            <div class="about-box">
+                <h2>Why Choose Me</h2>
+                <p><h3>Full Stack Expertise:</h3> I build high-performance, user-friendly applications with modern frameworks and technologies.
+                    <br>
+                   </br>
+                    <h3>Data-Driven Approach:</h3> I analyze complex datasets to extract valuable insights, enabling businesses to make informed decisions.
+                    <br>
+                   </br>
+                    <h3>Problem-Solving Mindset:</h3> My ability to handle both backend logic and data analytics ensures optimized, efficient solutions.
+                    <br>
+                   </br>
+                    <h3>Adaptability & Collaboration:</h3> I thrive in dynamic environments, working with teams to create innovative, impactful solutions.
+                </p>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

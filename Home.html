@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="/Favicon/Pf.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/side.css">
+    <link rel="stylesheet" href="/css/ideal.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/Contact.css"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body> 
+
+    <header>
+        <nav>
+            <div class="left">
+                <h1>Sameer's Portfolio</h1>
+              </div>
+            <div class="right">
+              <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="/About.html">ABOUT</a></li>
+                <li><a href="/Projects.html">PROJECT</a></li>
+                <li><a href="/Contact.html">Contact Me</a></li>
+              </ul>
+              <span class="menu-toggle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </span>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="text-purple">Sameer</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="\Image\Main.jpg" alt="None">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-grey">What I have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="experience-container">
+                    <div class="experience-container">
+                        <div class="experience-item">
+                            <h3>Intern at Intellipaat Software Solutions</h3>
+                            <p><strong>Duration:</strong> [Dec 2023] - [Jan 2024]</p>
+                            <p> <br>• Developed and maintained dynamic web applications utilizing JavaScript, HTML, and CSS.
+                                <br>• Collaborated closely with cross-functional teams to deliver creative solutions aligning with product
+                                goals, focusing on design and user experience.
+                                <br>• Conducted and participated in rigorous code reviews to enhance code quality and optimize team
+                                productivity.
+                            </p>
+                        </div>
+                        <div class="experience-item">
+                            <h3>Intern at Main Flow Services and Technologies</h3>
+                            <p><strong>Duration:</strong> [Jul 2024] - [Sep 2024]</p>
+                            <p> <br>• Developed full-stack web apps using MongoDB, Express.js, React.js, and Node.js (MERN).
+                                <br>• Built and optimized RESTful APIs, reducing server response time by 20%.
+                                <br>• Designed efficient MongoDB schemas and created reusable React components.
+                                <br>• Collaborated using Git/GitHub, enhancing app scalability and user experience.</p>
+                        </div>
+                        <div class="experience-item">
+                            <h3>Intern at INMAS, DRDO </h3>
+                            <p><strong>Duration:</strong> [Jun 2025] - [Jul 2025]</p>
+                            <p><br>• Operated advanced instruments including Mass Spectrometer, LC-MS (Agilent), NMR (Bruker),
+                                UV/Fluorescence Spectrophotometers, Rotary Evaporator, Probe Sonicator, and Centrifuge for
+                                sample analysis and purification.
+                                <br>• Assisted in radiolabeling experiments using Technetium-99m (Tc-99m) for imaging and
+                                biodistribution in preclinical models.
+                                <br>• Gained hands-on experience in compound isolation, sample preparation, and bioanalytical
+                                techniques under sterile lab conditions.
+                                </p>
+                        </div>
+    
+                        <div class="experience-item">
+                            <h3>Corporate-Head at Yuvaan, LFC</h3>
+                            <p><strong>Duration:</strong> [2023] - [Present]</p>
+                            <p><br>I was responsible for identifying and approaching potential sponsors that aligned with our organizational
+                                goals. I crafted tailored sponsorship proposals that outlined the benefits of collaboration, such as brand
+                                visibility, community impact, and opportunities for corporate social responsibility. I successfully secured financial support and resources from various
+                                local businesses and corporations, significantly enhancing our funding capabilities for programs and events
+                                </p>
+                        </div>
+                        <div class="experience-item">
+                            <h3>Executive Member at BioSoc-DTU</h3>
+                            <p><strong>Duration:</strong> [2023] - [Present]</p>    
+                            <p><br>I played a crucial role in enhancing the organization’s visual and technical presence through various media
+                                formats. My primary responsibilities revolved around editing reels and images to effectively showcase our
+                                activities, events, and initiatives, ensuring that they resonated with our audience and aligned with our brand
+                                identity.</p>
+                        </div>
+                        <div class="experience-item">
+                            <h3>Executive Member at DEAPTH-DTU</h3>
+                            <p><strong>Duration:</strong> [2023] - [Presnet]</p>
+                            <p><br>The Physics society of DTU Delhi Technological University it will help to promote excellence in physics
+                                research by providing a platform for students, academics, and professionals to share ideas, conduct
+                                groundbreaking research, and contribute to the scientific community.
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Full Stack developer', 'Data Analyst'],
+            typeSpeed: 50,
+        });
+
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('nav ul').classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

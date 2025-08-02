@@ -1,0 +1,100 @@
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background: url('/Image/img.png') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay effect */
+}
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    position: relative;
+    z-index: 1; /* Ensure text is above the overlay */
+    animation: slideInDown 1s ease-in-out;
+}
+.curved {
+    position: relative;
+    background: rgb(170, 107, 228);
+    padding: 80px 20px;
+    text-align: center;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+.about-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    text-align: left;
+    border-top: 2px solid white;
+    padding-top: 40px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+.about-box {
+    flex: 1;
+    min-width: 300px;
+    border-right: 2px solid white;
+    padding-right: 20px;
+}
+.about-box:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+.about-box h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: white;
+}
+.about-box p {
+    font-size: 18px;
+    color: white;
+    line-height: 1.8;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes fadeInUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+@keyframes slideInDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+        border-top: none;
+        padding-top: 0;
+    }
+    .about-box {
+        border-right: none;
+        padding-right: 0;
+        border-bottom: 2px solid white;
+        padding-bottom: 20px;
+    }
+    .about-box:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+}
